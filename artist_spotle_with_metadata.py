@@ -293,9 +293,9 @@ with st.sidebar:
 """
     )
 
-    with st.expander("Artists available in metadata"):
-        metadata = load_metadata()
-        st.dataframe(metadata[["artist", "genre", "country", "artist_type", "gender", "debut_year"]], hide_index=True)
+    # with st.expander("Artists available in metadata"):
+    #     metadata = load_metadata()
+    #     st.dataframe(metadata[["artist", "genre", "country", "artist_type", "gender", "debut_year"]], hide_index=True)
 
 remaining = MAX_GUESSES - len(st.session_state.guesses)
 st.subheader(f"Guesses remaining: {remaining}")
