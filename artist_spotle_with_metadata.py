@@ -229,7 +229,7 @@ def reset_game(target_artist: dict):
     st.session_state.won = False
 
 
-st.title("🎧 Artist Spotle")
+st.title("🎧 DAIS Spotle")
 st.caption("Spotify powers artist search/images. The clue data comes from artists_metadata.csv.")
 
 client_id = get_secret("SPOTIFY_CLIENT_ID")
