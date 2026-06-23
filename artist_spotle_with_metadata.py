@@ -293,9 +293,9 @@ with st.sidebar:
 """
     )
 
-    # with st.expander("Artists available in metadata"):
-    #     metadata = load_metadata()
-    #     st.dataframe(metadata[["artist", "genre", "country", "artist_type", "gender", "debut_year"]], hide_index=True)
+    with st.expander("Artists available in metadata"):
+         metadata = load_metadata()
+         st.dataframe(metadata[["artist", "genre", "country", "artist_type", "gender", "debut_year"]], hide_index=True)
 
 remaining = MAX_GUESSES - len(st.session_state.guesses)
 st.subheader(f"Guesses remaining: {remaining}")
@@ -371,5 +371,5 @@ if st.session_state.game_over:
         if target["spotify_url"]:
             st.link_button("Open on Spotify", target["spotify_url"])
 
-with st.expander("Debug: show target metadata"):
-    st.json(st.session_state.target)
+# with st.expander("Debug: show target metadata"):
+#     st.json(st.session_state.target)
