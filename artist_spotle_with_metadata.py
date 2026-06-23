@@ -7,7 +7,7 @@ import requests
 import streamlit as st
 
 
-st.set_page_config(page_title="Artist Spotle", page_icon="🎧", layout="wide")
+st.set_page_config(page_title="DAIS Spotle", page_icon="🎧", layout="wide")
 
 SPOTIFY_TOKEN_URL = "https://accounts.spotify.com/api/token"
 SPOTIFY_API_BASE = "https://api.spotify.com/v1"
